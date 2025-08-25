@@ -25,11 +25,12 @@ public class SMSNotificationProvider implements INotificationProvider {
     }
 
     @Override
-    public void sendMessage(final String message) {
+    public String sendMessage(final String message) {
         // Actual implementation of sending message
 
         // Simulating sending a message
         System.out.println("SMS Notification: " + message);
+        return "SMS Notification: " + message;
     }
 
     @Override

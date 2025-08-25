@@ -22,7 +22,7 @@ package notificationproviders;
  * @since 1.0.0
  */
 public interface INotificationProvider {
-    void sendMessage(String message);
+    String sendMessage(String message);
 
     String getName();
 }

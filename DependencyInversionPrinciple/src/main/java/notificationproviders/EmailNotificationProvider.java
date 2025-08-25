@@ -25,11 +25,12 @@ public class EmailNotificationProvider implements INotificationProvider {
     }
 
     @Override
-    public void sendMessage(final String message) {
+    public String sendMessage(final String message) {
         // Actual implementation of sending message
 
         // Simulating sending a message
         System.out.println("Email Notification: " + message);
+        return "Email Notification: " + message;
     }
 
     @Override
