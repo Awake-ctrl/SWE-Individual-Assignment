@@ -1,7 +1,8 @@
 package notificationproviders;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertInstanceOf;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class NotificationFactoryTest {
 
@@ -18,5 +19,10 @@ class NotificationFactoryTest {
     @Test
     void getPushNotificationProviderTest() {
         assertInstanceOf(PushNotificationProvider.class, NotificationFactory.getNotificationProvider("push"));
+    }
+
+    @Test
+    void getNullProviderTest() {
+        assertNull(NotificationFactory.getNotificationProvider("test"));
     }
 }
