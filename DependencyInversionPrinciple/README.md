@@ -33,6 +33,8 @@ The project demonstrates how high-level modules depend on abstractions (`INotifi
 - **NotificationFactory**: Factory class to get the required provider at runtime.  
 - **Program**: The console application entry point that uses the factory and interface to send notifications without being tightly coupled to specific implementations.
 
+## UML Diagram
+![UML Diagram of Dependency Inversion Principle](./DIP%20UML.jpg)
 
 ## Prerequisites
 - Java 17+
